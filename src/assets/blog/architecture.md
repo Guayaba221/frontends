@@ -59,7 +59,7 @@ L2 blocks in Scroll are generated, committed to base layer Ethereum, and finaliz
 
 Figure 3 illustrates that Scroll blocks will be finalized on L1 in a multi-step process. Each L2 block will progress through the following three stages until it is finalized.
 
-- `Precommitted` indicates a block has been proposed by a Sequencer and sent to Rollers. Although Precommitted blocks are not yet a canonical part of the Scroll L2 chain because they have not been posted on the Ethereum base layer, users who trust the Sequencer can choose to take action on them in anticipation.
+- `Precommitted` indicates a block has been proposed by a Sequencer and sent to the Rollers. Although Precommitted blocks are not yet a canonical part of the Scroll L2 chain because they have not been posted on the Ethereum base layer, users who trust the Sequencer can choose to take action on them in anticipation.
 - `Committed` indicates the transaction data of this block has been posted on the rollup contract on Ethereum. This ensures that the block data is available, but does not prove that it has been executed in a valid way.
 - `Finalized` indicates the correct execution of transactions in this block has been proven by verifying a validity proof on-chain on Ethereum. Finalized blocks are considered canonical parts of the Scroll L2 chain.
 
